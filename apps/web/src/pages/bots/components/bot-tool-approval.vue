@@ -98,12 +98,14 @@
         <!-- Active Tools Card -->
         <div class="rounded-md border bg-background/70 p-3 flex flex-col justify-between">
           <div class="flex xl:flex-col items-center xl:items-stretch justify-between gap-3">
-            <p class="text-xs text-muted-foreground">
-              {{ $t('bots.toolApproval.metrics.activeRules') }}
-            </p>
-            <div class="flex items-baseline gap-1">
-              <span class="text-lg xl:text-2xl font-semibold">{{ activeToolsCount }}</span>
-              <span class="text-xs font-medium text-muted-foreground">/ {{ approvalTools.length }}</span>
+            <div class="space-y-1">
+              <p class="text-xs text-muted-foreground">
+                {{ $t('bots.toolApproval.metrics.activeRules') }}
+              </p>
+              <div class="flex items-baseline gap-1">
+                <span class="text-lg xl:text-2xl font-semibold leading-none">{{ activeToolsCount }}</span>
+                <span class="text-xs font-medium text-muted-foreground">/ {{ approvalTools.length }}</span>
+              </div>
             </div>
           </div>
           <div class="mt-1 xl:mt-3 xl:min-h-[32px] flex items-center">
@@ -116,11 +118,13 @@
         <!-- Rules Count Card -->
         <div class="rounded-md border bg-background/70 p-3 flex flex-col justify-between">
           <div class="flex xl:flex-col items-center xl:items-stretch justify-between gap-3">
-            <p class="text-xs text-muted-foreground">
-              {{ $t('bots.toolApproval.metrics.totalDefined') }}
-            </p>
-            <div class="mt-0 xl:mt-2">
-              <span class="text-lg xl:text-2xl font-semibold">{{ totalRulesCount }}</span>
+            <div class="space-y-1">
+              <p class="text-xs text-muted-foreground">
+                {{ $t('bots.toolApproval.metrics.totalDefined') }}
+              </p>
+              <div class="flex items-center">
+                <span class="text-lg xl:text-2xl font-semibold leading-none">{{ totalRulesCount }}</span>
+              </div>
             </div>
           </div>
           <div class="mt-1 xl:mt-3 xl:min-h-[32px] flex items-center">
